@@ -19,7 +19,7 @@
    dd01a3507 | Update CHANGELOG.md
    225466bc3 | Cleanup after v0.12.23 release
    
-   Кроманда для получения: git log --oneline v0.12.23...v0.12.24
+   Команда для получения: git log --oneline v0.12.23...v0.12.24
 5. Впервый раз функция providerSource упоминается в коммите 8c928e835 с комментарием main: Consult local directories as potential mirrors of providers
    Команда для получения: git log -S "func providerSource\\(.*\\)" --pickaxe-regex --oneline
 6. Список коммитов в которых была изменена функция globalPluginDirs:
@@ -31,7 +31,7 @@
    66ebff90c | move some more plugin search path logic to command
    8364383c3 | Push plugin discovery down into command package
 
-   Кроманды для получения:
+   Команды для получения:
    1. Определяем что функция появилась в коммите 8364383c3 при помощи команды "git log -S "func globalPluginDirs\(.*\)" --pickaxe-regex --oneline"
    2. Определяем что функция находится в файле plugins.go при помощи команды "git grep -p "func globalPluginDirs\(.*\)" 8364383c3"
    3. Находим коммиты с изменением в теле функции при помощи команды "git log -L :globalPluginDirs:plugins.go --oneline"
