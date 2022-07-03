@@ -20,7 +20,7 @@
    225466bc3 | Cleanup after v0.12.23 release
    
    Команда для получения: git log --oneline v0.12.23...v0.12.24
-5. Впервый раз функция providerSource упоминается в коммите 8c928e835 с комментарием main: Consult local directories as potential mirrors of providers
+5. В первый раз функция "providerSource" упоминается в коммите "8c928e835" с комментарием "main: Consult local directories as potential mirrors of providers"  
    Команда для получения: git log -S "func providerSource\\(.*\\)" --pickaxe-regex --oneline
 6. Список коммитов в которых была изменена функция globalPluginDirs:
    Хеш-сумма | Комментарий
